@@ -61,6 +61,10 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  let suma = 0;
+  for (let i = 0; i < numeros.length ; i++) {
+    suma = suma + numeros[i]
+  } return suma
 }
 
 
@@ -113,6 +117,14 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
+  for (let i = 0; i < arreglo.length; i++) {
+    for (let y = i + 1; y < arreglo.length; y++){
+      if (arreglo[i] !== arreglo[y]) {
+        return false
+      }
+    }
+  } return true
+  
   
 } 
 
